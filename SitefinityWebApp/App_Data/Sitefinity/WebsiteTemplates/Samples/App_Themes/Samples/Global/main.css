@@ -1,0 +1,537 @@
+﻿body {
+	background-color: #252525;
+	font-size: 12px;
+	font-family: Arial;
+	color: #444;
+	line-height: 20px;
+}
+
+#wrapper {
+	position:relative;
+	float:left;
+	width: 960px;
+	margin-left: -480px;
+	left: 50%;
+}
+
+#header {
+	position:relative;
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+	
+#logo {
+	position:relative;
+	float:left;
+	width:150px;
+	height: 38px;
+	background-image: url(../Images/logo.jpg);
+}
+
+a#logo:hover {
+	background-position: 0 -38px;
+}
+
+#credentials {
+	position:relative;
+	float: right;
+	width: 50%;
+	text-align:right;
+	line-height: 16px;
+	font-size: 11px;
+	color: white;
+}
+
+#credentials span {	
+	color: #797979;
+}
+
+#credentials a {
+	color: #00a8e3;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#credentials a:hover {
+	color: #78dbff;
+}
+
+#content {
+	
+	background-color: white;
+	position:relative;
+	float:left;
+	width: 900px;
+	padding: 30px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-top: 5px solid #33b9e9;
+
+}
+
+
+#credentials {
+color: #ccc;
+}
+
+#credentials span {
+color: #777;
+}
+
+h1, h2 {
+	font-weight: normal;
+	letter-spacing: -1px;
+	color: #06759d;
+	padding-bottom: 5px;
+}
+
+#footer {
+	position:relative;
+	float:left;
+	width: 100%;
+	height: 70px;
+}
+
+.sfTagsList,
+.sfCategoriesList
+{
+    display:inline;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+.sfTagsList li,
+.sfCategoriesList li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    padding-left: 5px;
+    position: relative;
+    float: left;
+    display: inline;
+}
+.sfitemFlatTaxon.sfitemTaxonWrp
+{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.sfitemFlatTaxon.sfitemTaxonWrp .sfitemFieldLbl,
+.sfitemHierarchicalTaxon.sfitemTaxonWrp .sfitemFieldLbl
+{
+    display: inline;
+    position: relative;
+    float: left;
+}
+.sfitemFlatTaxon.sfitemTaxonWrp .sfproductsSummary ,
+.sfitemHierarchicalTaxon.sfitemTaxonWrp .sfproductsSummary 
+{
+    display: inline;
+}
+
+/*h2.sfcommentsTitle 
+{
+    position:relative;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom:1px solid #eee;
+}*/
+
+.sfcommentsForm 
+{
+    border: 0px;
+}
+
+.sfproductsTitle a
+{
+    font-size:12px;
+}
+
+/*New comments*/
+
+/* --- List View --- */
+/*#region --- COMMENTS --- */
+.sfcommentsCounterWrp
+{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+}
+.sfcommentsCounterWrp.sfcommentsFull, .sfcommentsCounterWrp.sfcommentsShort
+{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+
+    margin-left: 15px;
+    padding-left: 20px;
+    background: transparent url(../Images/sfComments.gif) no-repeat 0 -400px;
+}
+.sfcommentsCounterWrp.sfcommentsIconOnly
+{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    text-align: center;
+    line-height: 18px;
+    width: 26px;
+    height: 24px;
+    background: transparent url(../Images/sfComments.gif) no-repeat 0 -300px;
+}
+.sfcommentsCounterWrp.sfcommentsEmpty
+{
+    background-position: 0 -2900px;
+}
+/* --- List View --- */
+/* Comments title */
+.sfcommentsTitle
+{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.sfcommentsFormWithAvatarWrp .sfcommentsTitleWrp
+{
+    width: 400px;
+    position: relative;
+}
+.sfcommentsFormWithAvatarWrp .sfcommentsTitle
+{
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 12px !important;
+    color: #999 !important;
+    font-weight: normal !important;
+    font-style: italic;
+    font-family: Arial !important;
+    border-bottom:0 !important;
+    line-height: 1.5 !important;
+
+}
+.sfcommentsFormWithAvatarWrp .sfcommentsTitle.sfFocused
+{
+    display: none;
+}
+.sfcommentsFormWithAvatarWrp .sfcancelReply
+{
+    float: right;
+}
+.sfcommentsFormWithAvatarWrp .sfMessage
+{
+    margin-bottom: 20px;
+}
+.sfLeaveCommentLnk, .sfcancelReply
+{
+    font-size: 12px;
+    margin-left: 10px;
+    *vertical-align: middle;
+}
+.sfcommentsOderFilterWrp
+{
+    float: right;
+    margin-top: 12px;
+    font-size: 11px;
+    cursor:pointer;
+    text-decoration:underline;
+}
+.sfcommentsOderFilterWrp:hover
+{
+    text-decoration:none;
+}
+.sfShowNewWrp
+{
+    margin: 5px 0 10px;
+    padding: 5px 20px;
+    text-align: center;
+    background-color: #f0f8fa;
+}
+.sfLoadMoreWrp
+{
+    margin-top: 30px;
+}
+/* List of comments wrapper */
+.sfcommentsListWrp
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sfcommentsList
+{
+    list-style-position: outside;
+    border: 0;
+}
+/* Single comment wrapper */
+.sfcommentsList .sfcommentDetails
+{
+    margin-bottom: 10px;
+    padding: 5px 15px 10px 56px;
+    position: relative;
+    z-index: 2;
+}
+/* Comment of the post author wrapper */
+.sfcommentsList .sfcommentDetails.sfcommentOfTheAuthor
+{
+    background-color: #f5f5f5;
+}
+/* Shows the subsequent comment number */
+.sfcommentsList .sfcommentNumber
+{
+    display: block;
+    color: #989898;
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    _left: -50px;
+    width: 32px;
+    height: 28px;
+    background: transparent url(../Images/sfComments.gif) no-repeat 0 -200px;
+}
+/* Comment author */
+.sfcommentsList .sfcommentAuthorAvatar
+{
+    width: 40px;
+    position: absolute;
+    left: 0;
+}
+/* Comment author */
+.sfcommentsList .sfcommentAuthor
+{
+    font-weight: normal;
+    color: #666;
+}
+/* Comment date */
+.sfcommentsList .sfcommentDate
+{
+    color: #666;
+}
+.sfcommentsList .sfcommentReplyLnk
+{
+    margin-left: 10px;
+}
+/* Comment content */
+.sfcommentsList .sfcommentText
+{
+    line-height: 1.2;
+    color: #000;
+}
+/* --- Comments Form --- */
+.sfcommentsFormWrp
+{
+}
+.sfcommentsFormWithAvatarWrp
+{
+    position: relative;
+}
+.sfcommentsFormWithAvatarWrp .sfcommentAuthorAvatar
+{
+    position: absolute;
+    width: 40px;
+}
+.sfcommentsFormWithAvatarWrp .sfcommentsFormWrp
+{
+    padding-left: 56px;
+}
+.sfcommentsFormWrp .sfNeutral
+{
+    margin-bottom: 10px;
+    background-color: #ffc;
+    padding: 5px 15px;
+}
+/* Submit comment form wrapper */
+.sfcommentsForm
+{
+    padding: 0 0 30px;
+}
+/* List of (submit comment) form fields wrapper  */
+.sfcommentsForm .sfcommentsFieldsList
+{
+    margin-top:0;
+    margin-bottom:0;
+    padding-bottom: 15px;
+}
+/* Single form field wrapper */
+.sfcommentsForm .sfcommentsField
+{
+    margin-bottom: 5px;
+}
+/* Editor field wrapper */
+.sfcommentsForm .sfcommentEditor
+{
+    margin-bottom: 15px;
+    width: 400px;
+}
+.sfcommentsForm .sfcommentEditor .k-editor 
+{
+    border:0;
+    height: 80px;
+    border-spacing: 0;
+}
+/* Rad Editor control wrapper */
+.sfcommentsForm .sfEditorWrp
+{
+    position: relative;
+}
+/* Form text input */
+.sfcommentsForm .sfTxt
+{
+    width: 200px;
+
+    padding: 3px;
+    vertical-align: middle;
+    font-family: Arial,Verdana,Sans-serif;
+    font-size: 12px;
+}
+/* Label note */
+.sfcommentsForm .sfNote
+{
+    font-size: 11px;
+    line-height: 1.2;
+    color: #666;
+}
+/* Error */
+.sfcommentsForm .sfError
+{
+   color: #f00;
+   padding-left: 20px;
+   background: transparent url(../Images/sfComments.gif) no-repeat 0 0;
+}
+/* Captcha */
+/* Captcha wrapper */
+.sfcommentsForm .sfcommentCaptcha
+{
+    margin-top: 15px;
+}
+/* Captcha image and text field wrapper */
+.sfcommentsForm .sfcommentCaptcha .sfRestfulCaptchaImageWrp, 
+.sfcommentsForm .sfcommentCaptcha .sfFieldWrp
+{
+    margin-top: 10px;
+}
+/* Captcha text field */
+.sfcommentsForm .sfcommentCaptcha .sfRestfulCapthaInput 
+{
+    width: 200px;
+
+    padding: 3px;
+    vertical-align: middle;
+    font-family: Arial,Verdana,Sans-serif;
+    font-size: 12px;
+}
+/* Captcha label */
+.sfcommentsForm .sfcommentCaptcha .sfTxtLbl
+{
+    padding-left: 0;
+    font-weight: normal;
+}
+.sfcommentsForm .sfcommentCaptcha .sfRestfulCaptchaRefresh
+{
+    font-size: 11px;
+}
+
+/* Submit comment button */
+.sfcommentsForm .sfcommentsSubmitBtn
+{
+    font-family: Arial,Verdana,Sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
+/* Subscribe to email notifications */
+.sfSubscribeToEmailMsgWrp, .sfSubscribeToEmailLnkWrp
+{
+    margin: 5px 0 5px 56px;
+}
+.sfSubscribeToEmailMsgWrp a, .sfSubscribeToEmailLnkWrp a 
+{
+    text-decoration: underline;
+    cursor:pointer;
+}
+.sfSubscribeToEmailMsgWrp a:hover, .sfSubscribeToEmailLnkWrp a:hover 
+{
+    text-decoration: none;
+}
+.sfSubscribeToEmailMsgWrp, .sfSubscribeToEmailLnk
+{
+    padding-left: 20px;
+    background: transparent url(../Images/sfComments.gif) no-repeat 0 -95px;
+    height: 20px;
+    display: inline-block;
+}
+.sfSubscribeToEmailLnk
+{
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+.sfLeaveCommentLnk 
+{
+    display:inline-block;
+    margin-bottom:10px;
+    cursor:pointer;
+    text-decoration:underline;
+}
+.sfLeaveCommentLnk:hover
+{
+    text-decoration:none;
+}
+.sfRestfulCaptchaRefresh 
+{
+     cursor:pointer;
+}
+
+.sfWatermarkField
+{
+	position: relative;
+}
+
+.sfWatermarkField .sfTxtLbl {
+    left: 6px;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    top: 6px;
+    color: #999;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* --- end of COMMENTS --- */
+
+.sfcommentsListWrp ol,
+.sfcommentsForm ol
+{
+    list-style:none;
+    padding-left:0;
+}
+
+.sfErrorSummary, .sfMessage 
+{
+    padding: 3px 10px;
+}
+.sfitemHierarchicalTaxon.sfitemTaxonWrp 
+{
+    clear:both;
+}
