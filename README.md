@@ -55,7 +55,7 @@ Sitefinity ships with OpenAccess ORM. To use OpenAccess in the data provider of 
 ```xml
 <ProjectExtensions>
   <VisualStudio>
-    <UserProperties OpenAccess_EnhancementOutputLevel="1" OpenAccess_UpdateDatabase="False" OpenAccess_Enhancing="False"OpenAccess_ConnectionId="DatabaseConnection1" OpenAccess_ConfigFile="App.config" />
+    <UserProperties OpenAccess_EnhancementOutputLevel="1" OpenAccess_UpdateDatabase="False" OpenAccess_Enhancing="False" OpenAccess_ConnectionId="DatabaseConnection1" OpenAccess_ConfigFile="App.config" />
   </VisualStudio>
 </ProjectExtensions>
 <PropertyGroup>
