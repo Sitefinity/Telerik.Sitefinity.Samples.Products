@@ -7,7 +7,6 @@ namespace ProductCatalogSample
     /// Resource class for the procuts module
     /// </summary>
     [ObjectInfo(typeof(ProductsResources), Title = "ProductsResourcesTitle", Description = "ProductsResourcesDescription")]
-    //[ObjectInfo("ProductsResources", ResourceClassId = "ProductsResources")]
     public class ProductsResources : Resource
     {
         #region Constructions
