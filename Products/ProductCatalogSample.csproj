@@ -98,7 +98,7 @@
     <Compile Include="ProductsModule.cs" />
     <Compile Include="ProductsResources.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Web\Controls\TaxonomyDropDown.cs" />
+    <Compile Include="Web\Controls\TaxonomyDropDownField.cs" />
     <Compile Include="Web\Services\Data\ProductItemViewModel.cs" />
     <Compile Include="Web\Services\ProductsBackendService.cs" />
     <Compile Include="Web\UI\Public\CustomSettingsDesignerView.cs" />
@@ -115,7 +115,7 @@
     <EmbeddedResource Include="ProductsWorkflow.xamlx" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Web\Controls\Scripts\TaxonomyDropDown.js" />
+    <EmbeddedResource Include="Web\Controls\Scripts\TaxonomyDropDownField.js" />
     <EmbeddedResource Include="Web\UI\Public\CustomSettingsDesignerView.ascx">
       <SubType>ASPXCodeBehind</SubType>
     </EmbeddedResource>

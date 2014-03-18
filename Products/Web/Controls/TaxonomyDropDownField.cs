@@ -61,7 +61,7 @@ namespace ProductCatalogSample.Web.Controls
 
         #region Private Fields and constants
 
-        internal const string script = "ProductCatalogSample.Web.Controls.Scripts.TaxonomyDropDown.js";
+        internal const string script = "ProductCatalogSample.Web.Controls.Scripts.TaxonomyDropDownField.js";
 
         #endregion
     }

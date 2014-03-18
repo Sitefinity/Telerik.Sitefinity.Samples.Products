@@ -24,7 +24,7 @@ using System.Web.UI;
 [assembly: Guid("d4992245-5ae8-4e1a-9de1-194ab26b5a0c")]
 
 [assembly: WebResource("ProductCatalogSample.Web.UI.Public.CustomSettingsDesignerView.js", "application/x-javascript")]
-[assembly: WebResource("ProductCatalogSample.Web.Controls.Scripts.TaxonomyDropDown.js", "application/x-javascript")]
+[assembly: WebResource("ProductCatalogSample.Web.Controls.Scripts.TaxonomyDropDownField.js", "application/x-javascript")]
 
 // Version information for an assembly consists of the following four values:
 //
