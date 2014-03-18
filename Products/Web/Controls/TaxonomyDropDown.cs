@@ -32,12 +32,12 @@ namespace ProductCatalogSample.Web.Controls
             var taxonomy = tManager.GetTaxonomies<FlatTaxonomy>().Where(t => t.Id == tid).SingleOrDefault();
             if (taxonomy != null)
             {
-                var countries = taxonomy.Taxa.OrderBy(c => c.Title.ToString());
+                var colorsTaxa = taxonomy.Taxa.OrderBy(c => c.Title.ToString());
                 this.RenderChoicesAs = Telerik.Sitefinity.Web.UI.Fields.Enums.RenderChoicesAs.DropDown; //
                 // or you can use Telerik.Sitefinity.Web.UI.Fields.Enums.RenderChoicesAs.CheckBoxes for multiple choice
 
                 this.Choices.Clear();
-                foreach (var taxon in countries)
+                foreach (var taxon in colorsTaxa)
                 {
                     var choice = new ChoiceItem();
                     choice.Value = taxon.Id.ToString();

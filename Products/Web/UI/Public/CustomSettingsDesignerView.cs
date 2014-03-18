@@ -26,6 +26,15 @@ namespace ProductCatalogSample.Web.UI.Public
             set;
         }
 
+        /// <summary>
+        /// The bool property that holds the hide/show price option
+        /// </summary>
+        public bool HidePrice
+        {
+            get;
+            set;
+        }
+
         #region Labels
 
 
@@ -83,7 +92,14 @@ namespace ProductCatalogSample.Web.UI.Public
         /// </remarks>
         protected override void InitializeControls(GenericContainer container)
         {
-            
+            if (this.HidePrice == true)
+            {
+                HidePriceControl.Choices[0].Selected = true;
+            }
+            else
+            {
+                HidePriceControl.Choices[0].Selected = false;
+            }
         }
 
         /// <summary>
@@ -96,25 +112,11 @@ namespace ProductCatalogSample.Web.UI.Public
         {
             get
             {
-                return null;
+                if (DesignerTemplateName != null) return DesignerTemplateName;
+                return "ProductCatalogSample.Web.UI.Public.CustomSettingsDesignerView.ascx";
             }
         }
 
-        /// <summary>
-        /// Gets or sets the path of the external template to be used by the control.
-        /// </summary>
-        /// <value></value>
-        public override string LayoutTemplatePath
-        {
-            get
-            {
-                return ProductsModule.ProductsVirtualPath + "ProductCatalogSample.Web.UI.Public.CustomSettingsDesignerView.ascx";
-            }
-            set
-            {
-                base.LayoutTemplatePath = value;
-            }
-        }
 
         #endregion
 
@@ -132,6 +134,7 @@ namespace ProductCatalogSample.Web.UI.Public
 
             desc.AddProperty("hidePriceControlId", this.HidePriceControl.ClientID);
             desc.AddProperty("hidePriceControlDataFieldName", this.HidePriceControl.DataFieldName);
+
 
             return new[] { desc };
         }

@@ -71,6 +71,7 @@ ProductCatalogSample.Web.UI.Public.CustomSettingsDesignerView.prototype = {
         var control = this.get_controlData();
         var field = $find(this._hidePriceControlId);
         control.HidePrices = field.get_value();
+
     },
 
     /* --------------------------------- private methods --------------------------------- */
@@ -83,6 +84,7 @@ ProductCatalogSample.Web.UI.Public.CustomSettingsDesignerView.prototype = {
     _onUnload: function () {
 
     },
+
 
     get_hidePriceControlId: function () {
         return this._hidePriceControlId;

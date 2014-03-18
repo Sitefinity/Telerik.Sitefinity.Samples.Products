@@ -178,19 +178,23 @@ namespace ProductCatalogSample
             this.InstallTaxonomy(initializer, typeof(ProductItem));
 
 
-            var metaMan = initializer.Context.MetadataManager;
+            var metaMan = initializer.MetadataManager;
             var taxMan = initializer.TaxonomyManager;
 
             var flatTaxonomy = this.CreateTaxonomy<FlatTaxonomy>(initializer, "Colors", ColorsTaxonomyId, "Color");
 
-            var taxon1 = initializer.TaxonomyManager.CreateTaxon<FlatTaxon>();
-            taxon1.Title = "Red";
-            taxon1.Name = "Red";
-            var taxon2 = initializer.TaxonomyManager.CreateTaxon<FlatTaxon>();
-            taxon2.Title = "Blue";
-            taxon2.Name = "Blue";
-            flatTaxonomy.Taxa.Add(taxon1);
-            flatTaxonomy.Taxa.Add(taxon2);
+            //if the module is reinstalled the taxa will be re-added so a check is needed
+            if (initializer.TaxonomyManager.GetTaxonomy<FlatTaxonomy>(ColorsTaxonomyId).Taxa.Count() == 0)
+            {
+                var taxon1 = initializer.TaxonomyManager.CreateTaxon<FlatTaxon>();
+                taxon1.Title = "Red";
+                taxon1.Name = "Red";
+                var taxon2 = initializer.TaxonomyManager.CreateTaxon<FlatTaxon>();
+                taxon2.Title = "Blue";
+                taxon2.Name = "Blue";
+                flatTaxonomy.Taxa.Add(taxon1);
+                flatTaxonomy.Taxa.Add(taxon2);
+            }
 
             var type = metaMan.GetMetaType(typeof(ProductItem));
             if (type == null)
