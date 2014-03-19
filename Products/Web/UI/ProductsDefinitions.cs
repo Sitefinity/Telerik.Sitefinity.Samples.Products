@@ -1584,12 +1584,6 @@ namespace ProductCatalogSample.Web.UI
 
             #endregion
 
-            //#region Dialogs definition
-
-            //ProductsDefinitions.CreateDialogs(controlDefinition.DialogsConfig);
-
-            //#endregion
-
             return controlDefinition;
         }
 

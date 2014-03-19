@@ -10,9 +10,7 @@
 <telerik:RadListView ID="DetailsView" ItemPlaceholderID="ItemContainer" AllowPaging="False" runat="server" EnableEmbeddedSkins="false" EnableEmbeddedBaseStylesheet="false">
     <layouttemplate>
         <div class="sfproductsDetails">
-            <%--<div class="sfproductsLinksWrp">
-                <sf:MasterViewHyperLink class="sfproductsBack" Text="<%$ Resources:ProductsResources, AllProducts%>" runat="server" />
-            </div>--%>
+            </div>
             <asp:PlaceHolder ID="ItemContainer" runat="server" />
         </div>
     </layouttemplate>

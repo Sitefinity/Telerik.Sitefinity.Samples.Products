@@ -60,34 +60,7 @@ namespace ProductCatalogSample.Web.UI.Public
             }
         }
 
-        
-
         #region Overridden methods
-
-        /// <summary>
-        /// Renders the HTML opening tag of the control to the specified writer. This method is used primarily by control developers.
-        /// </summary>
-        /// <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter"/> that represents the output stream to render HTML content on the client.</param>
-        public override void RenderBeginTag(HtmlTextWriter writer)
-        {
-            if (!string.IsNullOrEmpty(this.CssClass))
-            {
-                this.AddAttributesToRender(writer);
-                writer.RenderBeginTag(HtmlTextWriterTag.Div);
-            }
-        }
-
-        /// <summary>
-        /// Renders the HTML closing tag of the control into the specified writer. This method is used primarily by control developers.
-        /// </summary>
-        /// <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter"/> that represents the output stream to render HTML content on the client.</param>
-        public override void RenderEndTag(HtmlTextWriter writer)
-        {
-            if (!string.IsNullOrEmpty(this.CssClass))
-            {
-                base.RenderEndTag(writer);
-            }
-        }
 
         /// <summary>
         /// Initializes the controls.
