@@ -35,7 +35,6 @@ namespace ProductCatalogSample.Model
 			itemMapping.HasProperty(p => p.InheritsPermissions);
 			itemMapping.HasProperty(p => p.CanInheritPermissions);
             itemMapping.HasAssociation(p => p.Urls).WithOppositeMember("parent","Parent").ToColumn("content_id").IsDependent().IsManaged();
-			itemMapping.HasAssociation<Telerik.Sitefinity.Workflow.Model.Tracking.ApprovalTrackingRecordMap>(p => p.ApprovalTrackingRecordMap);
 
 			//map language data & published translations
 			CommonFluentMapping.MapILifecycleDataItemFields<ProductItem>(itemMapping, this.Context);
