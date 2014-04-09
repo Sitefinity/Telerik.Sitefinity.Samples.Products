@@ -61,7 +61,7 @@ The project refers to the following NuGet packages:
 * Telerik.Sitefinity.Content.nupkg
 
 
-
+You can find the packages in the official [Sitefinity Nuget Server](http://nuget.sitefinity.com).
 
 
 ### Integrate the OpenAccess enhancer
