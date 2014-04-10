@@ -64,34 +64,7 @@ The project refers to the following NuGet packages:
 You can find the packages in the official [Sitefinity Nuget Server](http://nuget.sitefinity.com).
 
 
-### Integrate the OpenAccess enhancer
 
-Sitefinity ships with OpenAccess ORM. To use OpenAccess in the data provider of a module, you must integrate the OpenAccess enhancer. To do this:
-
-1. From the context menu of the project **Products**, click _Unload Project_.
-2. From the context menu of the unloaded project, click _Edit ProductCatalogSample.csproj_.
-3. Find the **<ProjectExtensions>** tag and replace it with the following lines of code: 
-```xml
-<ProjectExtensions>
-  <VisualStudio>
-    <UserProperties OpenAccess_EnhancementOutputLevel="1" OpenAccess_UpdateDatabase="False" OpenAccess_Enhancing="False" OpenAccess_ConnectionId="DatabaseConnection1" OpenAccess_ConfigFile="App.config" />
-  </VisualStudio>
-</ProjectExtensions>
-<PropertyGroup>
-  <OpenAccessPath>C:\GitHub\Telerik.Sitefinity.Samples.Dependencies</OpenAccessPath>
-</PropertyGroup>
-<Import Condition="Exists('$(OpenAccessPath)\OpenAccess.targets')" Project="$(OpenAccessPath)\OpenAccess.targets" />
-```
-
-4. In the **OpenAccessPath** element, place the path to the folder containing the **OpenAccess.targets** file. 
-
-    This is the location of the **Telerik.Sitefinity.Samples.Dependencies** repository that you cloned locally. In the example above, the repository is cloned in **C:\GitHub**.
-    
-5. Save the changes.
-6. From the context menu of the project, click _Reload Project_.
-
-    **NOTE**: If you are using Sitefinity 4.0 SP1 or prior, see [Custom Modules for Sitefinity 4.0](http://www.sitefinity.com/documentation/documentationarticles/developers-guide/sitefinity-essentials/modules/creating-custom-modules/custom-modules-for-sitefinity-4-0).
-7. Build the solution.
 
 ### Login
 
