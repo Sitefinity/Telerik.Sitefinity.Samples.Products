@@ -48,20 +48,24 @@ The project refers to the following NuGet packages:
 
 * OpenAccess.Core.nupkg
 
+* OpenAccess.CodeFirst.nupkg
+
 * Telerik.Sitefinity.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 
 * Telerik.Web.UI.nupkg
 
-* SitefinityWebApp.nupkg
+
+
+**SitefinityWebApp** library
 
 * Telerik.Sitefinity.All.nupkg
 
-* Telerik.Sitefinity.Samples.Common.nupkg
 
+**Telerik.Sitefinity.Samples.Common** library
 
-**Telerik.Sitefinity.Core** library
+* Telerik.Sitefinity.Core
 
 * OpenAccess.Core.nupkg
 
