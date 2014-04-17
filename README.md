@@ -52,8 +52,6 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Core.nupkg
 
-* Telerik.Sitefinity.Content.nupkg
-
 * Telerik.Web.UI.nupkg
 
 
