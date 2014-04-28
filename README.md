@@ -19,7 +19,7 @@ Using the Products sample, you can:
 
 ### Requirements
 
-* Sitefinity 6.3 license
+* Sitefinity license
 
 * .NET Framework 4
 
