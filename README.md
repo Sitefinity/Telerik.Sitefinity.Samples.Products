@@ -1,6 +1,8 @@
 Telerik.Sitefinity.Samples.Products
 ===================================
 
+[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.Products.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.Products.CI/)
+
 The Products sample project is a module that provides product listings built on top of a native content-based module in Sitefinity. Content-based modules themselves are based on _Generic Content_ and reuse much of the functionality available for generic content. 
 
 The Products sample demonstrates comprehensively the features of a content-based module that has all built-in functionality of a native Sitefinity module. 
