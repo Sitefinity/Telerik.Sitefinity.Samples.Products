@@ -10,7 +10,7 @@ namespace ProductCatalogSample
     public class ProductsResources : Resource
     {
         #region Constructions
-        
+
         /// <summary>
         /// Initializes new instance of <see cref="ProductsResources"/> class with the default <see cref="ResourceDataProvider"/>.
         /// </summary>
@@ -63,7 +63,7 @@ namespace ProductCatalogSample
             LastModified = "2010/12/01")]
         public string ProductsResourcesTitle
         {
-            get { return this["ProductsResourcesTitle"];  }
+            get { return this["ProductsResourcesTitle"]; }
         }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace ProductCatalogSample
             LastModified = "2010/12/01")]
         public string ProductsResourcesDescription
         {
-            get { return this["ProductsResourcesDescription"];  }
+            get { return this["ProductsResourcesDescription"]; }
         }
 
         #endregion
@@ -559,9 +559,9 @@ namespace ProductCatalogSample
         /// phrase: Products
         /// </summary>
         [ResourceEntry("PageGroupNodeTitle",
-            Value="Products",
-            Description="phrase: Products",
-            LastModified="2010/12/03")]
+            Value = "Products",
+            Description = "phrase: Products",
+            LastModified = "2010/12/03")]
         public string PageGroupNodeTitle
         {
             get { return this["PageGroupNodeTitle"]; }
@@ -701,7 +701,7 @@ namespace ProductCatalogSample
         #endregion
 
         #region ContentView registration
-        
+
         /// <summary>
         /// phrase: Products
         /// </summary>
@@ -713,7 +713,7 @@ namespace ProductCatalogSample
         {
             get { return this["ProductsViewTitle"]; }
         }
-     
+
         /// <summary>
         /// phrase: Widget that displays product items
         /// </summary>
@@ -1402,8 +1402,6 @@ namespace ProductCatalogSample
         {
             get { return this["ProductDetailViewFriendlyName"]; }
         }
-        
-        //
 
         /// <summary>
         /// phrase: List of product items

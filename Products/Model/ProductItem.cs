@@ -25,13 +25,7 @@ namespace ProductCatalogSample.Model
     [DataContract(Namespace = "http://sitefinity.com/samples/productcatalogue", Name = "ProductItem")]
     [ManagerType("ProductCatalogSample.Data.ProductsManager, ProductCatalogSample")]
     [Persistent(IdentityField = "contentId")]
-	public class ProductItem 
-        : Content
-        , IApprovalWorkflowItem
-        , ISecuredObject
-        , ILocatable
-        , ISitefinityCustomTypeSerialization
-        , ILifecycleDataItemGeneric
+	public class ProductItem : Content, IApprovalWorkflowItem, ISecuredObject, ILocatable, ISitefinityCustomTypeSerialization, ILifecycleDataItemGeneric
     {
         #region Constructors
 
@@ -265,7 +259,7 @@ namespace ProductCatalogSample.Model
         public void Serialize(object obj, out Dictionary<string, object> serializedObject)
         {
             
-            var unfilteredObjects= obj.GetSerializationPropertyValueCollection();
+            var unfilteredObjects = obj.GetSerializationPropertyValueCollection();
             serializedObject = new Dictionary<string, object>(unfilteredObjects.Count);
 
             //Removing of ContentLink objects is neccesary since we cannot handle deserialziation of this type

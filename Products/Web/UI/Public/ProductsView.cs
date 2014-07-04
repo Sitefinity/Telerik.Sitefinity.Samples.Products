@@ -66,6 +66,7 @@ namespace ProductCatalogSample.Web.UI.Public
             {
                 return this.hidePrice;
             }
+
             set
             {
                 this.hidePrice = value;

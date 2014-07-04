@@ -255,6 +255,7 @@ namespace ProductCatalogSample.Data
             {
                 this.GetContext().Add(languageData);
             }
+
             return languageData;
         }
 

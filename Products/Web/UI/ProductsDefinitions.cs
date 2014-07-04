@@ -1,37 +1,37 @@
-﻿using System;
+﻿using ProductCatalogSample.Model;
+using ProductCatalogSample.Web.Controls;
+using ProductCatalogSample.Web.UI.Public;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Telerik.Sitefinity.Services;
-using Telerik.Sitefinity.Web.UI.ContentUI.Config;
-using Telerik.Sitefinity.Configuration;
-using ProductCatalogSample.Model;
-using Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Master.Config;
-using Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Master;
-using Telerik.Sitefinity.Web.UI.Fields.Enums;
-using Telerik.Sitefinity.Web.UI.Backend.Elements.Config;
-using Telerik.Sitefinity.Web.UI.Backend.Elements.Enums;
-using Telerik.Sitefinity.Modules;
-using Telerik.Sitefinity.Web.UI.Backend.Elements.Widgets;
-using Telerik.Sitefinity.Localization.Configuration;
-using Telerik.Sitefinity.Localization;
-using Telerik.Sitefinity.Localization.Web.UI;
 using System.Web.UI;
-using Telerik.Sitefinity.Taxonomies;
-using Telerik.Sitefinity.Web.UI;
-using Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail;
-using Telerik.Sitefinity.Web;
 using Telerik.Sitefinity.Abstractions;
-using Telerik.Sitefinity.Versioning;
-using Telerik.Sitefinity.Web.UI.Fields.Config;
-using Telerik.Sitefinity.Web.UI.Fields;
-using Telerik.Sitefinity.Web.UI.Validation.Config;
-using Telerik.Sitefinity.Web.UI.Extenders.Config;
+using Telerik.Sitefinity.Configuration;
+using Telerik.Sitefinity.Localization;
+using Telerik.Sitefinity.Localization.Configuration;
+using Telerik.Sitefinity.Localization.Web.UI;
+using Telerik.Sitefinity.Model.ContentLinks;
+using Telerik.Sitefinity.Modules;
 using Telerik.Sitefinity.Modules.Pages;
-using ProductCatalogSample.Web.UI.Public;
+using Telerik.Sitefinity.Services;
+using Telerik.Sitefinity.Taxonomies;
+using Telerik.Sitefinity.Versioning;
 using Telerik.Sitefinity.Versioning.Web.UI.Config;
 using Telerik.Sitefinity.Versioning.Web.UI.Views;
-using ProductCatalogSample.Web.Controls;
-using Telerik.Sitefinity.Model.ContentLinks;
+using Telerik.Sitefinity.Web;
+using Telerik.Sitefinity.Web.UI;
+using Telerik.Sitefinity.Web.UI.Backend.Elements.Config;
+using Telerik.Sitefinity.Web.UI.Backend.Elements.Enums;
+using Telerik.Sitefinity.Web.UI.Backend.Elements.Widgets;
+using Telerik.Sitefinity.Web.UI.ContentUI.Config;
+using Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Detail;
+using Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Master;
+using Telerik.Sitefinity.Web.UI.ContentUI.Views.Backend.Master.Config;
+using Telerik.Sitefinity.Web.UI.Extenders.Config;
+using Telerik.Sitefinity.Web.UI.Fields;
+using Telerik.Sitefinity.Web.UI.Fields.Config;
+using Telerik.Sitefinity.Web.UI.Fields.Enums;
+using Telerik.Sitefinity.Web.UI.Validation.Config;
 
 namespace ProductCatalogSample.Web.UI
 {
@@ -117,7 +117,6 @@ namespace ProductCatalogSample.Web.UI
             };
             masterViewToolbarSection.Items.Add(deleteproductsWidget);
 
-
             masterViewToolbarSection.Items.Add(DefinitionsHelper.CreateSearchButtonWidget(masterViewToolbarSection.Items, typeof(ProductItem)));
 
             productsGridView.ToolbarConfig.Sections.Add(masterViewToolbarSection);
@@ -140,7 +139,7 @@ namespace ProductCatalogSample.Web.UI
                 Name = "Languages",
                 Text = "Languages",
                 ResourceClassId = typeof(LocalizationResources).Name,
-                CssClass = "",
+                CssClass = string.Empty,
                 WidgetType = typeof(LanguagesDropDownListWidget),
                 IsSeparator = false,
                 LanguageSource = LanguageSource.Frontend,
@@ -164,7 +163,7 @@ namespace ProductCatalogSample.Web.UI
                 ButtonType = CommandButtonType.SimpleLinkButton,
                 Text = "AllProducts",
                 ResourceClassId = typeof(ProductsResources).Name,
-                CssClass = "",
+                CssClass = String.Empty,
                 WidgetType = typeof(CommandWidget),
                 IsSeparator = false,
                 ButtonCssClass = "sfSel",
@@ -177,7 +176,7 @@ namespace ProductCatalogSample.Web.UI
                 ButtonType = CommandButtonType.SimpleLinkButton,
                 Text = "MyProducts",
                 ResourceClassId = typeof(ProductsResources).Name,
-                CssClass = "",
+                CssClass = String.Empty,
                 WidgetType = typeof(CommandWidget),
                 IsSeparator = false
             });
@@ -189,7 +188,7 @@ namespace ProductCatalogSample.Web.UI
                 ButtonType = CommandButtonType.SimpleLinkButton,
                 Text = "DraftProducts",
                 ResourceClassId = typeof(ProductsResources).Name,
-                CssClass = "",
+                CssClass = String.Empty,
                 WidgetType = typeof(CommandWidget),
                 IsSeparator = false
             });
@@ -201,7 +200,7 @@ namespace ProductCatalogSample.Web.UI
                 ButtonType = CommandButtonType.SimpleLinkButton,
                 Text = "PublishedProducts",
                 ResourceClassId = typeof(ProductsResources).Name,
-                CssClass = "",
+                CssClass = String.Empty,
                 WidgetType = typeof(CommandWidget),
                 IsSeparator = false
             });
@@ -213,7 +212,7 @@ namespace ProductCatalogSample.Web.UI
                 ButtonType = CommandButtonType.SimpleLinkButton,
                 Text = "ScheduledProducts",
                 ResourceClassId = typeof(ProductsResources).Name,
-                CssClass = "",
+                CssClass = String.Empty,
                 WidgetType = typeof(CommandWidget),
                 IsSeparator = false
             });
@@ -225,7 +224,7 @@ namespace ProductCatalogSample.Web.UI
                 ButtonType = CommandButtonType.SimpleLinkButton,
                 Text = "WaitingForApproval",
                 ResourceClassId = typeof(ProductsResources).Name,
-                CssClass = "",
+                CssClass = String.Empty,
                 WidgetType = typeof(CommandWidget),
                 IsSeparator = false
             });
@@ -536,7 +535,6 @@ namespace ProductCatalogSample.Web.UI
             };
             gridMode.ColumnsConfig.Add(titleColumn);
 
-
             DataColumnElement qtyColumn = new DataColumnElement(gridMode.ColumnsConfig)
             {
                 Name = "QuantityInStock",
@@ -831,7 +829,6 @@ namespace ProductCatalogSample.Web.UI
             };
 
             backendContentView.ViewsConfig.Add(productsInsertDetailView);
-
 
             var previewExternalScripts = DefinitionsHelper.GetExtenalClientScripts(
                 "Telerik.Sitefinity.Versioning.Web.UI.Scripts.VersionHistoryExtender.js, Telerik.Sitefinity",
@@ -1183,8 +1180,6 @@ namespace ProductCatalogSample.Web.UI
             detailView.Toolbar.Sections.Add(toolbarSectionElement);
         }
 
-
-
         private static void CreateBackendSections(DetailFormViewElement detailView, FieldDisplayMode displayMode)
         {
             #region Toolbar section
@@ -1281,8 +1276,6 @@ namespace ProductCatalogSample.Web.UI
             };
             mainSection.Fields.Add(contentField);
 
-
-
             //Product Image
             var productImageField = new ImageFieldElement(mainSection.Fields)
             {
@@ -1295,13 +1288,10 @@ namespace ProductCatalogSample.Web.UI
                 CssClass = "sfUserAvatar",
                 ResourceClassId = typeof(ProductsResources).Name,
                 DataFieldType = typeof(ContentLink),
-                DefaultSrc = "~/SFRes/images/ProductCatalogSample/Images.NoProductImage.png",// put your default image location example: 
+                DefaultSrc = "~/SFRes/images/ProductCatalogSample/Images.NoProductImage.png", // put your default image location example: 
                 SizeInPx = 100
             };
             mainSection.Fields.Add(productImageField);
-
-
-
 
             var summaryField = new TextFieldDefinitionElement(mainSection.Fields)
             {
@@ -1374,7 +1364,7 @@ namespace ProductCatalogSample.Web.UI
             var taxonSection = new ContentViewSectionElement(detailView.Sections)
             {
                 Name = "TaxonSection",
-                Title ="CategoriesAndTags",
+                Title = "CategoriesAndTags",
                 ResourceClassId = typeof(ProductsResources).Name,
                 CssClass = "sfExpandableForm",
                 ExpandableDefinitionConfig =
@@ -1402,7 +1392,7 @@ namespace ProductCatalogSample.Web.UI
             var moreOptionsSection = new ContentViewSectionElement(detailView.Sections)
             {
                 Name = "MoreOptionsSection",
-                Title ="MoreOptionsURL",
+                Title = "MoreOptionsURL",
                 ResourceClassId = typeof(ProductsResources).Name,
                 CssClass = "sfExpandableForm",
                 ExpandableDefinitionConfig =
@@ -1672,7 +1662,7 @@ namespace ProductCatalogSample.Web.UI
         /// Common name used for a command that performs a batch unpublish
         /// </summary>
         public const string GroupUnpublishCommandName = "groupUnpublish";
-        
+
         /// <summary>
         /// Common name used for a command that delets an item.
         /// </summary>

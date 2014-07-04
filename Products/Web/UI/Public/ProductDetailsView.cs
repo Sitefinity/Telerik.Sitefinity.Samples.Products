@@ -81,6 +81,7 @@ namespace ProductCatalogSample.Web.UI.Public
                         this.Controls.Clear();
                         this.Controls.Add(new LiteralControl("A product item was not selected or has been deleted. Please select another one."));
                     }
+
                     return;
                 }
                 else

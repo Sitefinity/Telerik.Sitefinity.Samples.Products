@@ -1,10 +1,10 @@
 ﻿using ProductCatalogSample.Model;
 using System.Collections.Generic;
-using Telerik.Sitefinity.Localization;
-using Telerik.Sitefinity.Web.UI.ControlDesign;
-using Telerik.Sitefinity.GenericContent.Model;
 using Telerik.Sitefinity.Configuration;
+using Telerik.Sitefinity.GenericContent.Model;
+using Telerik.Sitefinity.Localization;
 using Telerik.Sitefinity.Web.Configuration;
+using Telerik.Sitefinity.Web.UI.ControlDesign;
 
 namespace ProductCatalogSample.Web.UI.Public.Designers
 {
@@ -14,8 +14,8 @@ namespace ProductCatalogSample.Web.UI.Public.Designers
     public class ProductsDesigner : ContentViewDesignerBase
     {
         /// <summary>
-        /// Gets the name of the javascript type that the designer will use.
-        /// The designers can reuse for exampel the base class implementation and just customize some labels
+        /// Gets the name of the JavaScript type that the designer will use.
+        /// The designers can reuse for example the base class implementation and just customize some labels
         /// </summary>
         /// <value>The name of the script descriptor type.</value>
         protected override string ScriptDescriptorTypeName

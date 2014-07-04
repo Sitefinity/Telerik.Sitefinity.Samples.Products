@@ -90,8 +90,8 @@ namespace ProductCatalogSample
             string resourceAssembly = this.GetType().Assembly.FullName;
             string customTemplatesArea = "Product catalog SDK sample";
             string friendlyWidgetName = "Products catalog sample widget";
-            
-            initializer.RegisterControlTemplate(MasterListView.titlesOnlyLayoutTemplateName, typeof(MasterListView).FullName, ProductsDefinitions.FrontendTitlesOnlyListViewName, null, customTemplatesArea, Presentation.AspNetTemplate, friendlyControlName:friendlyWidgetName );
+
+            initializer.RegisterControlTemplate(MasterListView.titlesOnlyLayoutTemplateName, typeof(MasterListView).FullName, ProductsDefinitions.FrontendTitlesOnlyListViewName, null, customTemplatesArea, Presentation.AspNetTemplate, friendlyControlName: friendlyWidgetName);
             initializer.RegisterControlTemplate(MasterListView.titlesDatesLayoutTemplateName, typeof(MasterListView).FullName, ProductsDefinitions.FrontendTitlesDatesListViewName, null, customTemplatesArea, Presentation.AspNetTemplate, friendlyControlName: friendlyWidgetName);
             initializer.RegisterControlTemplate(MasterListView.titlesDatesSummariesLayoutTemplateName, typeof(MasterListView).FullName, ProductsDefinitions.FrontendTitlesDatesSummariesListViewName, null, customTemplatesArea, Presentation.AspNetTemplate, friendlyControlName: friendlyWidgetName);
             initializer.RegisterControlTemplate(MasterListView.titlesDatesContentsLayoutTemplateName, typeof(MasterListView).FullName, ProductsDefinitions.FrontendTitlesDatesContentsListViewName, null, customTemplatesArea, Presentation.AspNetTemplate, friendlyControlName: friendlyWidgetName);
@@ -215,7 +215,7 @@ namespace ProductCatalogSample
             {
                 type.Fields.Add(ContentLinksExtensions.CreateContentLinkField("ProductImage", "OpenAccessDataProvider", metaMan, RelationshipType.OneToOne));
             }
-            
+
 
         }
 

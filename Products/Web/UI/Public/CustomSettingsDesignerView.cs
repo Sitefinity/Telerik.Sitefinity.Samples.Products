@@ -112,7 +112,7 @@ namespace ProductCatalogSample.Web.UI.Public
         {
             get
             {
-                if (DesignerTemplateName != null) return DesignerTemplateName;
+                if (this.DesignerTemplateName != null) return this.DesignerTemplateName;
                 return "ProductCatalogSample.Web.UI.Public.CustomSettingsDesignerView.ascx";
             }
         }

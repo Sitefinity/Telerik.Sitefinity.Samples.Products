@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Telerik.Sitefinity.Web.UI.Fields;
+using System.Web.UI;
 using Telerik.Sitefinity.Configuration;
 using Telerik.Sitefinity.Taxonomies;
 using Telerik.Sitefinity.Taxonomies.Model;
-using Telerik.Sitefinity.Web.UI.Fields.Contracts;
 using Telerik.Sitefinity.Web.Configuration;
-using System.Web.UI;
+using Telerik.Sitefinity.Web.UI.Fields;
+using Telerik.Sitefinity.Web.UI.Fields.Contracts;
 
 namespace ProductCatalogSample.Web.Controls
 {
@@ -33,7 +33,8 @@ namespace ProductCatalogSample.Web.Controls
             if (taxonomy != null)
             {
                 var colorsTaxa = taxonomy.Taxa.OrderBy(c => c.Title.ToString());
-                this.RenderChoicesAs = Telerik.Sitefinity.Web.UI.Fields.Enums.RenderChoicesAs.DropDown; //
+                this.RenderChoicesAs = Telerik.Sitefinity.Web.UI.Fields.Enums.RenderChoicesAs.DropDown;
+
                 // or you can use Telerik.Sitefinity.Web.UI.Fields.Enums.RenderChoicesAs.CheckBoxes for multiple choice
 
                 this.Choices.Clear();

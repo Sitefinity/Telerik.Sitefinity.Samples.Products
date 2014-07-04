@@ -51,6 +51,7 @@ namespace ProductCatalogSample.Web.UI.Public
             {
                 return "~/SFRes/" + titlesDatesLayoutTemplateName;
             }
+
             set
             {
                 base.LayoutTemplatePath = value;
@@ -119,7 +120,7 @@ namespace ProductCatalogSample.Web.UI.Public
                 {
                     query = this.EvaluateUrl(query, "Date", "PublicationDate", this.Host.UrlEvaluationMode, this.Host.UrlKeyPrefix);
                     query = this.EvaluateUrl(query, "Author", "Owner", this.Host.UrlEvaluationMode, this.Host.UrlKeyPrefix);
-                    query = this.EvaluateUrl(query, "Taxonomy", "", typeof(ProductItem), this.Host.UrlEvaluationMode, this.Host.UrlKeyPrefix);
+                    query = this.EvaluateUrl(query, "Taxonomy", string.Empty, typeof(ProductItem), this.Host.UrlEvaluationMode, this.Host.UrlKeyPrefix);
                 }
 
                 int? totalCount = 0;
@@ -134,7 +135,7 @@ namespace ProductCatalogSample.Web.UI.Public
                 {
                     uiCulture = System.Globalization.CultureInfo.CurrentUICulture;
                 }
-                //the filter is adpated to the implementation of ILifecycleDataItemGeneric, so the culture is taken in advance when filtering published items.
+                //the filter is adapted to the implementation of ILifecycleDataItemGeneric, so the culture is taken in advance when filtering published items.
                 this.FilterExpression = ContentHelper.AdaptMultilingualFilterExpression(this.FilterExpression);
                 var filterExpression = DefinitionsHelper.GetFilterExpression(this.FilterExpression, this.AdditionalFilter);
                 query = Telerik.Sitefinity.Data.DataProviderBase.SetExpressions(

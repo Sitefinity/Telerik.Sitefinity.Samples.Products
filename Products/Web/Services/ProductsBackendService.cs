@@ -4,9 +4,9 @@ using ProductCatalogSample.Web.Services.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Telerik.Sitefinity.Lifecycle;
 using Telerik.Sitefinity.Modules;
 using Telerik.Sitefinity.Modules.GenericContent;
-using Telerik.Sitefinity.Lifecycle;
 
 namespace ProductCatalogSample.Web.Services
 {

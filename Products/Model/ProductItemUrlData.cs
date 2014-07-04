@@ -35,6 +35,7 @@ namespace ProductCatalogSample.Model
                     ((IDataItem)this.parent).Provider = ((IDataItem)this).Provider;
                 return this.parent;
             }
+
             set
             {
                 this.parent = (ProductItem)value;
