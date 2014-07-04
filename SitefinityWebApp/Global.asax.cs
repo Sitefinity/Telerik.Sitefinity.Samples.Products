@@ -21,7 +21,13 @@ namespace SitefinityWebApp
         protected void Application_Start(object sender, EventArgs e)
         {
             Telerik.Sitefinity.Abstractions.Bootstrapper.Initializing += new EventHandler<Telerik.Sitefinity.Data.ExecutingEventArgs>(Bootstrapper_Initializing);
-            Telerik.Sitefinity.Abstractions.Bootstrapper.Initialized += new EventHandler<Telerik.Sitefinity.Data.ExecutedEventArgs>(Bootstrapper_Initialized);
+            SystemManager.ApplicationStart += SystemManager_ApplicationStart;
+        }
+
+        protected void SystemManager_ApplicationStart(object sender, EventArgs e)
+        {
+            SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
+            SystemManager.RunWithElevatedPrivilege(worker);
         }
 
         protected void Bootstrapper_Initializing(object sender, Telerik.Sitefinity.Data.ExecutingEventArgs args)
@@ -29,14 +35,6 @@ namespace SitefinityWebApp
             if (args.CommandName == "RegisterRoutes")
             {
                 SampleUtilities.RegisterModule<ProductsModule>("ProductsCatalog", "This is a module that provides product listings built on top of a native content-based module in Sitefinity. Content-based modules themselves are based on Generic Content and reuse much of the functionality available there. This is the most comprehensive example of a content-based module that features all built-in functionality of a native Sitefinity module.");
-            }
-        }
-        protected void Bootstrapper_Initialized(object sender, Telerik.Sitefinity.Data.ExecutedEventArgs args)
-        {
-            if (args.CommandName == "Bootstrapped")
-            {
-                SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
-                SystemManager.RunWithElevatedPrivilege(worker);
             }
         }
 
