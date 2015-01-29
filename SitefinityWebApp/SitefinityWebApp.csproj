@@ -776,6 +776,10 @@
     <Content Include="App_Data\RadSpell\fr-FR.tdf" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ProductsIntegrationTests\ProductsIntegrationTests.csproj">
+      <Project>{1ff70e2f-139e-47ab-97fe-514194929ece}</Project>
+      <Name>ProductsIntegrationTests</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Telerik.Sitefinity.Samples.Common\Telerik.Sitefinity.Samples.Common.csproj">
       <Project>{CF03FB62-A8CC-42B4-9C81-87920C530D74}</Project>
       <Name>Telerik.Sitefinity.Samples.Common</Name>
