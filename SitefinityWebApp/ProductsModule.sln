@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{88527D
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsIntegrationTests", "..\ProductsIntegrationTests\ProductsIntegrationTests.csproj", "{1FF70E2F-139E-47AB-97FE-514194929ECE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,12 @@ Global
 		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release Pro|Any CPU.Build.0 = Release|Any CPU
 		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF03FB62-A8CC-42B4-9C81-87920C530D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FF70E2F-139E-47AB-97FE-514194929ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FF70E2F-139E-47AB-97FE-514194929ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FF70E2F-139E-47AB-97FE-514194929ECE}.Release Pro|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF70E2F-139E-47AB-97FE-514194929ECE}.Release Pro|Any CPU.Build.0 = Release|Any CPU
+		{1FF70E2F-139E-47AB-97FE-514194929ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FF70E2F-139E-47AB-97FE-514194929ECE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
