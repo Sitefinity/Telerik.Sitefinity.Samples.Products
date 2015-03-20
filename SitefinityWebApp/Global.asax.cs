@@ -3,6 +3,8 @@ using ProductCatalogSample;
 using ProductCatalogSample.Web.UI.Public;
 using Telerik.Sitefinity.Samples.Common;
 using Telerik.Sitefinity.Services;
+using Telerik.Sitefinity.Abstractions;
+using Telerik.Sitefinity.Data;
 
 namespace SitefinityWebApp
 {
@@ -20,21 +22,19 @@ namespace SitefinityWebApp
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            Telerik.Sitefinity.Abstractions.Bootstrapper.Initializing += new EventHandler<Telerik.Sitefinity.Data.ExecutingEventArgs>(Bootstrapper_Initializing);
-            SystemManager.ApplicationStart += SystemManager_ApplicationStart;
+            Bootstrapper.Initialized += Bootstrapper_Initialized;
         }
 
-        protected void SystemManager_ApplicationStart(object sender, EventArgs e)
+        void Bootstrapper_Initialized(object sender, ExecutedEventArgs e)
         {
-            SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
-            SystemManager.RunWithElevatedPrivilege(worker);
-        }
-
-        protected void Bootstrapper_Initializing(object sender, Telerik.Sitefinity.Data.ExecutingEventArgs args)
-        {
-            if (args.CommandName == "RegisterRoutes")
+            if (e.CommandName == "RegisterRoutes")
             {
                 SampleUtilities.RegisterModule<ProductsModule>("ProductsCatalog", "This is a module that provides product listings built on top of a native content-based module in Sitefinity. Content-based modules themselves are based on Generic Content and reuse much of the functionality available there. This is the most comprehensive example of a content-based module that features all built-in functionality of a native Sitefinity module.");
+            }
+            if ((Bootstrapper.IsDataInitialized) && (e.CommandName == "Bootstrapped"))
+            {
+                SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
+                SystemManager.RunWithElevatedPrivilege(worker);
             }
         }
 
@@ -53,10 +53,6 @@ namespace SitefinityWebApp
                 ProductsView productsView = new ProductsView();
                 SampleUtilities.AddControlToPage(new Guid(ProductsPageId), productsView, "Content", "Products Widget");
             }            
-
-            //create admin
-            SampleUtilities.CreateUsersAndRoles();
-            //SampleUtilities.FrontEndAuthenticate();
         }       
 
         protected void Session_Start(object sender, EventArgs e)
