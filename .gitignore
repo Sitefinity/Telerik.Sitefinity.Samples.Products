@@ -184,7 +184,7 @@ FakesAssemblies/
 *.jmconfig
 .nuget/NuGet.exe
 SitefinityWebApp/App_Data/Sitefinity/Configuration/*
-!SitefinityWebApp/App_Data/Sitefinity/Configuration/DataConfig.config
+!SitefinityWebApp/App_Data/Sitefinity/Configuration/StartupConfig.config
 SitefinityWebApp/Packages/*
 SitefinityWebApp/ResourcePackages/*
 SitefinityWebApp/.nuget/NuGet.exe
