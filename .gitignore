@@ -188,3 +188,4 @@ SitefinityWebApp/App_Data/Sitefinity/Configuration/*
 SitefinityWebApp/Packages/*
 SitefinityWebApp/ResourcePackages/*
 SitefinityWebApp/.nuget/NuGet.exe
+SitefinityWebApp/ProductsModule.sln.GhostDoc.xml
