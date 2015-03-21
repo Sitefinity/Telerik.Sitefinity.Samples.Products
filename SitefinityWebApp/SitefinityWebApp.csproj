@@ -1456,7 +1456,9 @@
     <Content Include="OpenAccessNuGet.targets" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Sitefinity\Configuration\StartupConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\StartupConfig.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
