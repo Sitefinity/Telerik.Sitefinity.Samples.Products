@@ -153,7 +153,9 @@
     <Compile Include="Web\UI\Public\ProductsView.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="App.config" />
+    <EmbeddedResource Include="App.config">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProductsWorkflow.xamlx" />
