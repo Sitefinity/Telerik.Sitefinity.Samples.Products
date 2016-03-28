@@ -50,7 +50,7 @@ For version-specific details about the required Sitefinity NuGet packages for th
 
 ### Login
 
-To login to Sitefinity backend, use the following credentials:   
+To login to Sitefinity backend, use the following credentials:  
 **Username:** admin   
 **Password:** password
 
