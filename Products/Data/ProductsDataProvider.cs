@@ -25,7 +25,7 @@ namespace ProductCatalogSample.Data
         #region Fields
 
         private static Type[] knownTypes;
-        private string[] supportedPermissionSets = new string[] { ProductsConstants.Security.PermissionSetName, SecurityConstants.Sets.Comments.SetName };
+        private string[] supportedPermissionSets = new string[] { ProductsConstants.Security.PermissionSetName };
 
         #endregion
 

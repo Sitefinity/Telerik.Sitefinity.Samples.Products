@@ -37,7 +37,7 @@ namespace ProductCatalogSample.Model
             // set default values
             this.inheritsPermissions = true;
             this.canInheritPermissions = true;
-            this.supportedPermissionSets = new string[] { ProductsConstants.Security.PermissionSetName, SecurityConstants.Sets.Comments.SetName };
+            this.supportedPermissionSets = new string[] { ProductsConstants.Security.PermissionSetName };
         }
 
         /// <summary>
