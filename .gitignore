@@ -186,6 +186,5 @@ FakesAssemblies/
 SitefinityWebApp/App_Data/Sitefinity/Configuration/*
 !SitefinityWebApp/App_Data/Sitefinity/Configuration/StartupConfig.config
 SitefinityWebApp/Packages/*
-SitefinityWebApp/ResourcePackages/*
 SitefinityWebApp/.nuget/NuGet.exe
 SitefinityWebApp/ProductsModule.sln.GhostDoc.xml
