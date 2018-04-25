@@ -1,6 +1,10 @@
 Progress.Sitefinity.Samples.Products
 ===================================
 
+### Disclaimer
+### The purpose of this sample is to show the creation of a Sitefinity content module. The content module similar to the built-in News module in Sitefinity. We highly recommend using [Module Builder](https://docs.sitefinity.com/overview-dynamic-modules-and-the-module-builder) to create modules that manage content. The built-in module builder can address all of the needs for managing content and updates will be provided to it with each Sitefinity release and is the best way to go in terms of managing content in the long run. To move the configurations for module builder modules between different deployment environments refer to [this](https://docs.sitefinity.com/export-and-deploy-code-changes#procedure) documentation or to setup continuous delivery refer to [this](https://docs.sitefinity.com/setup-the-continuous-delivery-process) guide.
+### The sample presented here can be used as a reference to how Sitefinity content modules are created, but for actual use of content module it is best to use Module Builder module.
+
 ### This repository is not automatically upgraded to latest Sitefintiy version. The repository is monitored for pull requests and fixes. The latest official version of Sitefinity that supports this sample is 9.1. Be aware that using a higher version could cause unexpected behavior. If you successfully upgrade the example to a greater version, please share your work with the community by submitting your changes via pull request.
 
 [![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.Products.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.Products.CI/)
